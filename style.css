@@ -1,0 +1,790 @@
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+* {
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN",
+    "Yu Mincho", "MS PMincho", serif;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+  color: #555;
+}
+
+.title {
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  color: #ebd8c3;
+}
+
+/* ヘッダーここから */
+header {
+  min-height: 80px;
+  width: 100%;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.95);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  z-index: 10;
+  top: 0;
+  display: flex;
+}
+
+header div {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  height: auto;
+  width: 30%;
+}
+
+header p {
+  display: none;
+}
+
+header nav {
+  width: 55%;
+  min-width: 600px;
+}
+
+header nav ul {
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+}
+
+header nav ul li.logo {
+  display: none;
+}
+
+li {
+  list-style: none;
+}
+
+a:hover {
+  color: #ebd8c3;
+}
+
+header nav ul li a {
+  font-weight: bold;
+  line-height: 2.5;
+  color: #ebd8c3;
+  padding: 4px;
+  display: block;
+  position: relative;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.sp_header {
+  display: none;
+}
+
+.sp_header nav ul {
+  display: block;
+}
+/* ヘッダーここまで */
+
+/* トップ画像ここから */
+.topimg {
+  width: 100%;
+  height: fit-content;
+  max-height: 600px;
+  overflow: hidden;
+  margin-bottom: 8rem;
+  position: relative;
+}
+
+.topimg img {
+  width: 100%;
+}
+
+.topmessage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Great Vibes", cursive;
+
+  color: #777777;
+}
+
+.fadeIn {
+  animation-name: fadeInAnime;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInAnime {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn2 {
+  animation-name: fadeInAnime2;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInAnime2 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* コンセプトここから */
+.concept {
+  margin-bottom: 120px;
+}
+
+.conceptdesc {
+  line-height: 2.2;
+}
+
+/* デザインここから */
+.designsection {
+  background-color: #fff6ea;
+  padding: 50px 20px;
+  margin: 50px auto;
+}
+
+.designbox {
+  max-width: 1080px;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.design {
+  width: 28%;
+  background-color: #ebd8c3;
+  padding: 15px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.design img {
+  width: 100%;
+  margin: 0 auto 15px;
+}
+
+.design img:hover {
+  transform: scale(1.1, 1.1);
+  transition: 1s all;
+}
+
+/* メニューここから */
+.menu {
+  padding: 50px 0;
+}
+
+.menubox {
+  width: 600px;
+  margin: auto;
+  padding: 30px;
+  /* border: #c4c4c4 solid 1px; */
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px -5px #777777;
+}
+
+.menubox table {
+  margin: auto;
+}
+
+table td {
+  padding: 10px;
+}
+
+table tr td:nth-of-type(2) {
+  color: #ebd8c3;
+}
+
+.menudesc {
+  margin: 20px 0 0 0;
+  font-size: 0.8rem;
+}
+
+/* ボイスここから */
+.voicesection {
+  margin: 50px auto;
+}
+
+.voicecard {
+  width: 100%;
+  padding: 30px;
+  border: #ebd8c3 solid 1px;
+  text-align: left;
+}
+
+.voicetop {
+  display: flex;
+  align-items: center;
+}
+
+.woman {
+  width: 30%;
+}
+
+.woman img {
+  width: 100%;
+}
+
+.woman p {
+  font-size: 0.8rem;
+}
+
+.voicetitle {
+  width: fit-content;
+  padding-left: 15px;
+}
+
+.voiceline {
+  width: 60%;
+  margin: 20px auto;
+  border: none;
+  border-top: 5px dotted #ebd8c3;
+}
+
+/* Aboutここから */
+.aboutsection {
+  background-color: #fff6ea;
+  padding: 50px 20px;
+  margin: 50px auto;
+}
+
+.aboutbox {
+  max-width: 1080px;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.aboutimg {
+  width: 45%;
+}
+
+.aboutimg img {
+  width: 100%;
+}
+
+.about {
+  width: 50%;
+  text-align: left;
+}
+
+.about table th {
+  padding: 10px;
+  font-weight: 400;
+}
+
+.about table td {
+  padding: 10px;
+  font-weight: 400;
+}
+
+/* fadeUp */
+
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+
+.fadeUpTrigger {
+  opacity: 0;
+}
+
+/* fadeUpここまで */
+
+/* ボタン */
+
+/* ボタン共通設定 */
+.btn04 {
+  /*線の基点とするためrelativeを指定*/
+  position: relative;
+  /*ボタンの形状*/
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 30px;
+  color: #ebd8c3;
+  border: 1px solid #ebd8c3;
+  text-decoration: none;
+  outline: none;
+  /*はみ出す背景色を隠す*/
+  overflow: hidden;
+  z-index: 2;
+  font-size: 1.2rem;
+}
+
+/*hoverした際のボタンの形状*/
+.btn04:hover {
+  color: #fff;
+  border-color: transparent;
+  /*色の変化を遅らせる
+        transition-delay: .6s;*/
+}
+
+/*線の設定*/
+.btn04 span {
+  display: block;
+  z-index: 3;
+}
+
+/*== 線から塗に変化（左から右） */
+
+/*線の設定*/
+.borderleft span::before,
+.borderleft span::after {
+  content: "";
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  width: 0;
+  height: 1px;
+  /*線の形状*/
+  background: #ebd8c3;
+  /*アニメーションの設定*/
+  transition: all 0.3s;
+}
+
+/*左上線*/
+.borderleft span::before {
+  left: 0;
+  top: 0;
+}
+
+/*左下線*/
+.borderleft span::after {
+  left: 0;
+  bottom: 0;
+}
+
+/*hoverをすると線が伸びる*/
+.borderleft:hover span::before,
+.borderleft:hover span::after {
+  width: 100%;
+}
+
+/*背景の設定*/
+.borderleft::before {
+  content: "";
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  /*背景の形状*/
+  height: 100%;
+  width: 0;
+  background: #ebd8c3;
+  /*アニメーションの設定*/
+  transition: all 0.3s;
+}
+
+/*hoverをすると背景が伸びる*/
+.borderleft:hover::before {
+  width: 100%;
+  /*0.4秒遅れてアニメーション
+        transition-delay: .4s;*/
+}
+
+/* ボタンここまで */
+
+/* ヘッダーリンクボタン */
+
+/* ボタン共通設定 */
+.btn01 {
+  /*線の基点とするためrelativeを指定*/
+  position: relative;
+  /*ボタンの形状*/
+  display: inline-block;
+  text-decoration: none;
+  padding: 0 10px;
+  outline: none;
+  /*はみ出す背景色を隠す*/
+  overflow: hidden;
+  z-index: 2;
+  font-size: 1.2rem;
+}
+
+.btn01:hover {
+  color: #fff;
+}
+
+/*hoverした際のボタンの形状*/
+.btn04:hover {
+  color: #fff;
+  border-color: transparent;
+  /*色の変化を遅らせる
+        transition-delay: .6s;*/
+}
+
+/*線の設定*/
+.btn04 span {
+  display: block;
+  z-index: 3;
+}
+
+/*== 線から塗に変化（左から右） */
+
+/*背景の設定*/
+.borderleft::before {
+  content: "";
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  /*背景の形状*/
+  height: 100%;
+  width: 0;
+  background: #ebd8c3;
+  /*アニメーションの設定*/
+  transition: all 0.3s;
+}
+
+/*hoverをすると背景が伸びる*/
+.borderleft:hover::before {
+  width: 100%;
+  /*0.4秒遅れてアニメーション
+        transition-delay: .4s;*/
+}
+
+/* ヘッダーリンクボタンここまで */
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {
+  /*横幅94%で左右に余白を持たせて中央寄せ*/
+  width: 94%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.slider img {
+  width: 100%; /*スライダー内の画像を横幅100%に*/
+  height: auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+  margin: 0 10px;
+}
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev,
+.slick-next {
+  position: absolute; /*絶対配置にする*/
+  top: 42%;
+  cursor: pointer; /*マウスカーソルを指マークに*/
+  outline: none; /*クリックをしたら出てくる枠線を消す*/
+  border-top: 2px solid #ebd8c3; /*矢印の色*/
+  border-right: 2px solid #ebd8c3; /*矢印の色*/
+  height: 15px;
+  width: 15px;
+}
+
+.slick-prev {
+  /*戻る矢印の位置と形状*/
+  left: -1.5%;
+  transform: rotate(-135deg);
+}
+
+.slick-next {
+  /*次へ矢印の位置と形状*/
+  right: -1.5%;
+  transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  color: transparent;
+  outline: none;
+  width: 8px; /*ドットボタンのサイズ*/
+  height: 8px; /*ドットボタンのサイズ*/
+  display: block;
+  border-radius: 50%;
+  background: #f7e9d7; /*ドットボタンの色*/
+  border: none;
+  padding: 0;
+}
+
+.slick-dots .slick-active button {
+  background: #ebd8c3; /*ドットボタンの現在地表示の色*/
+}
+
+/* スライダーここまで */
+
+/* ハンバーガー　コピペここから */
+/*+++ Reset +++*/
+.zdo_drawer_button * {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  font: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-align: left;
+  text-decoration: none;
+  list-style: none;
+}
+
+.zdo_drawer_button {
+  display: block;
+  padding: 0;
+  width: 42px;
+  height: 26px;
+  position: relative;
+  background: none;
+  border: none;
+  text-align: center;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  outline: none;
+}
+
+.zdo_drawer_button .zdo_drawer_bar {
+  display: block;
+  width: 42px;
+  height: 2px;
+  transition: all 0.2s;
+  transform-origin: 0% 0%;
+  transform: translateY(-50%);
+  position: absolute;
+  left: 0;
+}
+
+.zdo_drawer_button .zdo_drawer_bar1 {
+  top: 0;
+}
+
+.zdo_drawer_button .zdo_drawer_bar2 {
+  top: 50%;
+}
+
+.zdo_drawer_button .zdo_drawer_bar3 {
+  top: 100%;
+}
+
+.zdo_drawer_button.active .zdo_drawer_bar {
+  width: 36.77px;
+  left: 8px;
+}
+
+.zdo_drawer_button.active .zdo_drawer_bar1 {
+  transform: rotate(0.7853981633974483rad) translateY(-50%);
+  top: 0px;
+}
+
+.zdo_drawer_button.active .zdo_drawer_bar2 {
+  opacity: 0;
+}
+
+.zdo_drawer_button.active .zdo_drawer_bar3 {
+  transform: rotate(-0.7853981633974483rad) translateY(-50%);
+  top: calc(100% - 0px);
+}
+
+.zdo_drawer_button.active .zdo_drawer_menu_text {
+  display: none;
+}
+
+.zdo_drawer_button.active .zdo_drawer_close {
+  display: block;
+}
+
+.zdo_drawer_text {
+  width: 100%;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  text-align: center;
+  font-size: 10px;
+}
+
+.zdo_drawer_close {
+  letter-spacing: 0.08em;
+  display: none;
+}
+
+/*+++ Default Button Color +++*/
+.zdo_drawer_button {
+  color: #ebd8c3;
+}
+
+.zdo_drawer_button .zdo_drawer_bar {
+  background-color: #ebd8c3;
+}
+/* ハンバーガー　コピペここまで */
+
+/* メディアクエリ */
+@media (max-width: 450px) {
+  header {
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  header nav {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .sp_header {
+      padding-top: 20px;
+  }
+
+  .burger {
+    position: fixed;
+    right: 0;
+    z-index: 100;
+    padding: 10px 10px 20px 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+  .sp_header.active {
+    display: block;
+    transition: opacity 0.6s ease;
+  }
+
+  .sp_header nav ul li.logo {
+    display: block;
+  }
+
+  .sp_header img {
+    display: block;
+    width: 50%;
+  }
+
+  .topmessage {
+    font-size: 1rem;
+  }
+
+  .designbox {
+    display: block;
+  }
+
+  .design {
+    width: 90%;
+    margin: 0 auto 30px;
+  }
+  
+  .sp_hidden {
+      display: none;
+  }
+
+  .menubox {
+    width: 95%;
+    margin: auto;
+  }
+
+  .aboutbox {
+    display: block;
+  }
+
+  .aboutimg {
+    width: 80%;
+    margin: auto;
+  }
+
+  .about {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
