@@ -9,6 +9,7 @@ function fadeAnime() {
     if (scroll >= elemPos - windowHeight) {
       $(this).addClass("fadeUp");
       // 画面内に入ったらfadeInというクラス名を追記
+      $('.handmenu').addClass('fadeUp fadeUpTrigger')
     } else {
       $(this).removeClass("fadeUp");
       // 画面外に出たらfadeInというクラス名を外す
@@ -23,13 +24,17 @@ $(window).scroll(function () {
 
 
 
-// $("a").hover(function () {
-//   $("a").addClass("current");
-// },
-// function() {
-//     $("a").removeClass("current");
-// });
 
+$('.handmenu').click(function() {
+    $('.footmenu').addClass('active blur');
+    $('.handmenu').removeClass('active blur');
+})
+
+$('.footmenu').click(function() {
+    $('.footmenu').removeClass('active blur');
+    $('.handmenu').addClass('active blur');
+    $('.handmenu').removeClass('fadeUp fadeUpTrigger');
+})
 
 $('.slider').slick({
     autoplay: false,//自動的に動き出すか。初期値はfalse。
