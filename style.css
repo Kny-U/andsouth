@@ -1,3 +1,6 @@
+
+
+
 body {
   margin: 0;
 }
@@ -59,6 +62,10 @@ header div {
 header h1 {
   height: auto;
   width: 30%;
+}
+
+.header img {
+    width: 200px;
 }
 
 header p {
@@ -258,6 +265,33 @@ table tr td:nth-of-type(2) {
   margin: 20px 0 0 0;
   font-size: 0.8rem;
 }
+
+.footmenu,.handmenu {
+    display: none;
+}
+
+.footmenu.active,.handmenu.active {
+    display: block;
+}
+
+.blur{
+	animation-name:blurAnime;
+	animation-duration:1s;
+	animation-fill-mode:forwards;
+}
+
+@keyframes blurAnime{
+  from {
+	filter: blur(10px);
+	transform: scale(1.02);
+  }
+
+  to {
+	filter: blur(0);
+	transform: scale(1);
+  }
+}
+
 
 /* ボイスここから */
 .voicesection {
@@ -577,6 +611,7 @@ table tr td:nth-of-type(2) {
 .slick-dots {
   text-align: center;
   margin: 20px 0 0 0;
+  padding: 0;
 }
 
 .slick-dots li {
