@@ -201,6 +201,11 @@ a {
   line-height: 2.2;
 }
 
+.fillinbtn {
+    margin-top: 20px !important;
+    font-size: 0.9rem !important;
+}
+
 /* デザインここから */
 .designsection {
   background-color: #fff6ea;
